@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	background: green;
+}
+
+span {
+	background: violet;
+}
+
+.number p{
+	background-color: rgb(120, 203, 175);
+}
+
+.user p {
+	background: goldenrod;
+}
+
+button {
+	margin: 5px;
+	height: 50px;
+	width: 120px;
+	color: aliceblue;
+	background: rgb(105, 17, 221);
+	border-radius: 10px;
+	font-size: 20px;
+}
