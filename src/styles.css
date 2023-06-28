@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0;
+	padding: 0;
+	background: #94aab6;
+	font-family: "Acme", sans-serif;
+	font-family: "Catamaran", sans-serif;
+	font-family: "Chakra Petch", sans-serif;
+}

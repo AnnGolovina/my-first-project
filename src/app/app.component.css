@@ -1,9 +1,16 @@
+
+
 body {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	background: rgb(117, 66, 25);
 }
 
-p {
+/*p {
 	background: green;
 }
 
@@ -27,4 +34,4 @@ button {
 	background: rgb(105, 17, 221);
 	border-radius: 10px;
 	font-size: 20px;
-}
+}*/

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Acme", sans-serif;
+  font-family: "Catamaran", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #012727;
+  font-family: "Acme", sans-serif;
+  font-family: "Catamaran", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.search-wrapper {
+  margin: 10px 40px;
+  font-family: "Acme", sans-serif;
+  font-family: "Catamaran", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.search-wrapper p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #012727;
+}
+
+.search-wrapper input {
+  width: 270px;
+  height: 25px;
+}
+
+.user-wrapper {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
