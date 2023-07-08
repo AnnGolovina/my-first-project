@@ -30,6 +30,10 @@ export class UserEditFormComponent {
     console.log("Users", this.usersService.users);
   }
 
+  fieldsString() {
+    this.editFilds.filter((key) => typeof key === "string");   
+  }
+
 }
 
 
