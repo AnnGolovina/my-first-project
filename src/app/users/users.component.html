@@ -5,7 +5,7 @@
 </div>
 <div class="user-wrapper">
 <app-user
-  *ngFor="let user of searchValue ? searchResult : users"
+  *ngFor="let user of searchValue ? usersService.searchResult : usersService.users"
   [user]="user"
  
 ></app-user>

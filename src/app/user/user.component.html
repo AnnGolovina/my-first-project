@@ -1,16 +1,27 @@
 <div class="user-item" *ngIf="user">
 	<div>
-	<div class="user-info">
+	<div class="user-info" *ngIf="!isUserDataEditing">
 		<p>Name: {{user.name}}</p>
-		<p>Age: {{user.age}}</p>
+		<p>{{user.email}}</p>
+		<p>{{user.phone}}</p>
+		<p>{{user.address.street}}</p>
+		<!--<p>Age: {{user.age}}</p>-->
+
+		<!--<p *ngIf="isShowUserData">
+			<app-lifecycle></app-lifecycle>{{user.age}}
+		</p>
+		<button (click)="showAndHideUserData()">Hide private data</button>-->
 	</div>
-	<div class="location">
+
+	<app-user-edit-form *ngIf="isUserDataEditing" [user]="user" [editFilds]="['name','email','phone']"></app-user-edit-form>
+	<!--<div class="location">
 		<p class="title-locations">Locations</p>
 		<div  *ngFor="let location of user.locations" >
 			<p>City: {{location.title}}</p>
 			<span>Lat: {{location.lat}}</span>
 		</div>
-	</div>
+	</div>-->
 </div>
-	<button (click)="showUserData()">Show user</button>
+<button (click)=" toggleIsUserDataEditing()">Edit</button>
+	<!--<button (click)="showUserData()">Show user</button>-->
 </div>
