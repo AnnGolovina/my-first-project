@@ -13,7 +13,11 @@
 		<button (click)="showAndHideUserData()">Hide private data</button>-->
 	</div>
 
-	<app-user-edit-form *ngIf="isUserDataEditing" [user]="user" [editFilds]="['name','email','phone']"></app-user-edit-form>
+	<app-user-edit-form
+    *ngIf="isUserDataEditing"
+    [user]="user"
+    [editFields]="['name', 'email', 'phone', 'address']"
+  ></app-user-edit-form>
 	<!--<div class="location">
 		<p class="title-locations">Locations</p>
 		<div  *ngFor="let location of user.locations" >

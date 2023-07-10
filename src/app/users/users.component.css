@@ -34,6 +34,8 @@ h1 {
 .search-wrapper input {
   width: 270px;
   height: 25px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .user-wrapper {
@@ -43,4 +45,16 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
+}
+
+.btn-sort {
+  width: 150px;
+  height: 28px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #6fa8b8b9;
+  font-family: "Acme", sans-serif;
+  font-family: "Catamaran", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }

@@ -1,9 +1,9 @@
 <div class="form" *ngIf="user">
   <input
-    *ngFor="let field of editFilds"
+    *ngFor="let field of editFields"
     [name]="field"
     [placeholder]="field"
-    [value]="user[field]"
+   
     (input)="onInput($event)"
   />
 </div>

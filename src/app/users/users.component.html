@@ -2,6 +2,7 @@
 
 <div class="search-wrapper">
 <p class="search">Search:</p> <input type="text" [value]="searchValue" (input)="onInput($event)"  placeholder="Search by name or city..."/>
+<button (click)="onBtnSort()" class="btn-sort">Sort by name</button>
 </div>
 <div class="user-wrapper">
 <app-user
