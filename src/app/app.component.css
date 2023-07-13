@@ -6,7 +6,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-between;
 	background: rgb(117, 66, 25);
 }
 

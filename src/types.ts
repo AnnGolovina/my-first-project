@@ -16,7 +16,6 @@ export interface UserInterface {
 	phone: string;
 	website: string;
 	address: AddressInterface;
-	geo: GeoInterface;
 	company: CompanyIntreface;
 }
 
@@ -25,7 +24,7 @@ export interface AddressInterface {
 	suite: string;
 	city: string;
 	zipcode: string;
-
+	geo: GeoInterface;
 }
 
 export interface GeoInterface {

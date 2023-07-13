@@ -2,11 +2,13 @@
 
 <div class="search-wrapper">
 <p class="search">Search:</p> <input type="text" [value]="searchValue" (input)="onInput($event)"  placeholder="Search by name or city..."/>
-<button (click)="onBtnSort()" class="btn-sort">Sort by name</button>
+<button *ngIf="!isSorted" (click)="onBtnSort()" class="btn-sort">Reversed sort</button>
+<button *ngIf="isSorted" (click)="onBtnSort()" class="btn-sort">Sort by name</button>
+
 </div>
 <div class="user-wrapper">
 <app-user
-  *ngFor="let user of searchValue ? usersService.searchResult : usersService.users"
+  *ngFor="let user of searchValue ? usersService.searchResult : isSorted ? usersService.sortResult : usersService.users"
   [user]="user"
  
 ></app-user>

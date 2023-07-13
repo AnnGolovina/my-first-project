@@ -23,9 +23,10 @@ export class UsersService {
     );
   }
 
-  sortUsers() {
+  sortUsers(isAlphabetic: boolean = true) {
     this.sortResult = this.users.sort(
-      (user1, user2) =>  user1.name.localeCompare(user2.name)
-      )    
+      (user1, user2) => isAlphabetic ? user1.name.localeCompare(user2.name) : user2.name.localeCompare(user1.name)
+      );
+      return  this.sortResult;
   }
 }
