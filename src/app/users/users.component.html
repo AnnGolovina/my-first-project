@@ -2,8 +2,8 @@
 
 <div class="search-wrapper">
 <p class="search">Search:</p> <input type="text" [value]="searchValue" (input)="onInput($event)"  placeholder="Search by name or city..."/>
-<button *ngIf="!isSorted" (click)="onBtnSort()" class="btn-sort">Reversed sort</button>
-<button *ngIf="isSorted" (click)="onBtnSort()" class="btn-sort">Sort by name</button>
+<button *ngIf="!isSorted" (click)="onBtnSort()" class="btn-sort">Sort by name</button>
+<button *ngIf="isSorted" (click)="onBtnSort()" class="btn-sort">Reversed sort</button>
 
 </div>
 <div class="user-wrapper">

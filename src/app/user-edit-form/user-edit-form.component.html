@@ -1,6 +1,6 @@
 <div class="form" *ngIf="user && mergedUser">
-  <div  *ngFor="let field of editFields">
-    <span>{{field}}</span>
+  <div  *ngFor="let field of editFields" class="in-form">
+    <span >{{field}}</span>
   <input
     [name]="field"
     [placeholder]="field"
